@@ -33,8 +33,17 @@
     	accessToken: 'your.mapbox.access.token'
     }).addTo(mymap);
 
-    var marker = L.marker([42.445686, -83.215482]).addTo(mymap);
+    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM').addTo(mymap);
+
+    var TenDecade=L.layerGroup([Paccm]);
 	
+    var OverlayMaps = {
+          "1910-1919" : FirDecade,
+          "1920-1929" : SecDecade,
+	  "2000-2009" : TenDecade
+     };
+                   
+     L.control.layers(null, OverlayMaps).addTo(map);
   </script>
 </body>
 </html>
