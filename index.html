@@ -40,9 +40,10 @@
     
     var TenDecade=L.layerGroup([Paccm]);
     
-    var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
-
-    var SecDecade=L.layerGroup([Montinella]);
+    var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
+	Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1922), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map);
+	
+    var SecDecade=L.layerGroup([Montinella, Navarra]);
     
     var OverlayMaps = {
           "1910-1919" : FirDecade,
