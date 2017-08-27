@@ -36,12 +36,12 @@
     	accessToken: 'your.mapbox.access.token'
     }).addTo(map);
 
-    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM (2001-present)<object data="http://www.youtube.com/embed/W7qWa52k-nE" width="560" height="315"></object>').addTo(map);
+    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM (2001-present)'<object data="http://www.youtube.com/embed/W7qWa52k-nE" width="560" height="315"></object>).addTo(map);
     
     var TenDecade=L.layerGroup([Paccm]);
     
     var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
-	Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1912), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map);
+	Navarra = L.marker([42.334700, -83.052641]).closePopup('Navarra, Salvador F. (1912), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map);
 	
     var FirDecade=L.layerGroup([Navarra]);
     var SecDecade=L.layerGroup([Montinella]);
