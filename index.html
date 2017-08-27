@@ -33,8 +33,10 @@
     	accessToken: 'your.mapbox.access.token'
     }).addTo(mymap);
 
-    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM').addTo(mymap);
+    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM').addTo(mymap),
+	Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(mymap);
 
+    var SecDecade=L.layerGroup([Montinella]);
     var TenDecade=L.layerGroup([Paccm]);
 	
     var OverlayMaps = {
@@ -43,7 +45,7 @@
 	  "2000-2009" : TenDecade
      };
                    
-     L.control.layers(null, OverlayMaps).addTo(map);
+     L.control.layers(null, OverlayMaps).addTo(mymap);
   </script>
 </body>
 </html>
