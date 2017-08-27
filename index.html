@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Exploring Religious Diversity in Cairo, Egypt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" href="leaflet.css" />
-<script src="leaflet.js">  </script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
+
+    <style type="text/css">
+        html, body { width: 100%; height: 100%; margin: 0; }
+        #map, #container { width: 49.5%; height: 100%; }
+        #map { float: left; }
+        #container { float: right; }
+        #container .map { width: 100%; height: 50%; }
+    </style>
 	  <header>
 		<h3> Fil-Am Settlement History, Michigan</h3>
 	  </header>
@@ -18,10 +21,13 @@
 	
   <body>
   
-    <div id="map"> 
-      
-    </div> 
-    <script> var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    <div id="map"></div>
+
+    <script src="../leaflet.js"></script>
+
+<script type="text/javascript">
+    
+    var mymap = L.map('map').setView([51.505, -0.09], 13);
     
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
