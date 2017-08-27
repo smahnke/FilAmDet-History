@@ -36,12 +36,14 @@
     	accessToken: 'your.mapbox.access.token'
     }).addTo(map);
 
-    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM (2001-present)').addTo(map),
-	Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
+    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM (2001-present)').addTo(map);
+    
+    var TenDecade=L.layerGroup([Paccm]);
+    
+    var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
 
     var SecDecade=L.layerGroup([Montinella]);
-    var TenDecade=L.layerGroup([Paccm]);
-	
+    
     var OverlayMaps = {
           "1910-1919" : FirDecade,
           "1920-1929" : SecDecade,
