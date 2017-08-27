@@ -26,7 +26,8 @@
     
     var map = L.map('map', {
     	center:[42.399544, -83.137689], 
-	zoom: 12
+	zoom: 12,
+	layers: [FirDecade, SecDecade, TenDecade]
     });
     
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic21haG5rZSIsImEiOiJjajZ2NDVlcWowdmQ4MndtbjhuaXY1aDBiIn0.vtdvh938-CfB6DQkZnjehA', {
@@ -43,7 +44,8 @@
     var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
 	Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1922), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map);
 	
-    var SecDecade=L.layerGroup([Montinella, Navarra]);
+    var FirDecade=L.layerGroup([Navarra]);
+    var SecDecade=L.layerGroup([Montinella]);
     
     var OverlayMaps = {
           "1910-1919" : FirDecade,
@@ -51,7 +53,7 @@
 	  "2000-2009" : TenDecade
      };
                    
-     L.control.layers(OverlayMaps).addTo(map);
+     L.control.layers(null,OverlayMaps).addTo(map);
   </script>
 </body>
 </html>
