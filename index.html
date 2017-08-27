@@ -5,12 +5,12 @@
     <title>Fil-Am Settlement History, Michigan</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
-    <!--- Audio plugin --->
+    <!-- Audio plugin -->
     <script src="/audiojs/audio.min.js"></script>
     <script>
-    audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-    });
+      audiojs.events.ready(function() { 
+        audiojs.createAll();
+      });
     </script>
 
     <style type="text/css">
@@ -45,7 +45,7 @@
     	accessToken: 'your.mapbox.access.token'
     }).addTo(map);
 
-    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('<audio src="/audiojs/Sonrecording.mp3" preload="auto" />').addTo(map);
+    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('<audio src="../audiojs/Sonrecording.mp3" preload="auto"></audio>').addTo(map);
     
     var TenDecade=L.layerGroup([Paccm]);
     
