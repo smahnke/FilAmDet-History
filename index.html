@@ -48,6 +48,11 @@
     var Paccm = L.marker([42.445686, -83.215482]).bindPopup('PACCM<audio controls><source src="./audiojs/Sonrecording.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>').addTo(map);
     
     var TenDecade=L.layerGroup([Paccm]);
+	
+    var Aklanon= L.marker([42.577672, -82.991210]).bindPopup('Aklanon Club of Michigan. (1998), 13529 Clover Lawn, Sterling Heights, MI 48313').addTo(map),
+	ACJ= L.marker([42.478472,-83.181911]).bindPopup('American Citizens for Justice. (1998), 13361 Ludlow, Huntington Woods, MI 48070').addTo(map);
+	
+    var NinDecade=L.layerGroup([Aklanon, ACJ]);
     
     var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
 	Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1912), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map),
@@ -69,6 +74,7 @@
     var OverlayMaps = {
           "1910-1919" : FirDecade,
           "1920-1929" : SecDecade,
+	  "1990-1999" : NinDecade,
 	  "2000-2009" : TenDecade
      };
                    
