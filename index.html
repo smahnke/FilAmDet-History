@@ -55,8 +55,6 @@
     var NinDecade=L.layerGroup([Aklanon, ACJ]);
     
     var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
-	Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1912), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map),
-	Valenzuela = L.marker([42.349475, -83.006129]).bindPopup('Jose T. Valenzuela (1917), 992 Canton Ave, Detroit, MI, Chemical Engineering, University of Michigan').addTo(map),
 	Manzanero = L.marker ([42.415848, -83.100520]).bindPopup('Manzanero, Esteban M. (1921), 80 Church St, Detroit, MI. Civil Engineering, Valparaiso University').addTo(map),
         Ruiz = L.marker ([42.374284, -82.975360]).bindPopup('Ruiz, Elias L. (1921), 2946 St. Jean Ave, Detroit, MI. Civil Engineering, University of Detroit').addTo(map),
         Conlu = L.marker ([42.361012, -82.953085]).bindPopup('Conlu, Mariano (1921), 443 Connors Ave. Detroit, MI. Cass Technical High School').addTo(map),
@@ -68,9 +66,23 @@
         Paguyo = L.marker([42.353534, -83.065245]).bindPopup('Paguyo, Manuel A. (1922) 4638 Cass Ave, Detroit, MI, Literary, Detroit Junior College').addTo(map),
         Villareal = L.marker([42.337382, -83.053920]).bindPopup('Villareal, Mariano Conltj y (1922) 126 West Columbia Street, Detroit, MI, Commercial auto mechanic, Cass Technical High School').addTo(map);
 	
-    var FirDecade=L.layerGroup([Navarra, Valenzuela]);
+    var Melanio = L.marker([42.274468, -83.738242]).bindPopup('Javierto, Melanio (1921) 631 Tappan Ave., Ann Arbor, MI. Mechanical Engineering, College of Engineering').addTo(map),
+        Jose = L.marker([42.272759, -83.743803]).bindPopup('Jose, Esteban L. (1921), 425 Cross St. Ann Arbor, MI. English, University of Michigan; Suguitan, Juan C. Civil Engineering, Uni of Michigan; Suyat, Donato T. High School, Ann Arbor High').addTo(map),
+        Kaparas = L.marker([42.275250, -83.746037]).bindPopup('Kaparas, Manuel D. (1921), 308 Packard St. Ann Arbor, MI, Medicine, University of Michigan').addTo(map),
+        Fernandez = L.marker([42.269303, -83.735333]).bindPopup('Fernandez, Salvador (1921), 1015 East University Street, Ann Arbor, MI, Chemical Engineering, Uni of Michigan').addTo(map),
+        Fernando = L.marker([42.281488, -83.735556]).bindPopup('Fernando, Alejandro (1921), 110 Glen Ave, Ann Arbor, MI, Political Science, Uni of Michigan').addTo(map), 
+        Maranon = L.marker([42.271196, -83.739413]).bindPopup('Maranon, Joaquin M. (1921), 822 Oakland Ave, Ann Arbor, MI, Plant Chemistry, Uni of Michigan').addTo(map),
+        Marare = L.marker([42.275301, -83.733802]).bindPopup('Marare, Vicente Del R. (1921), 215 S. University Ave, Ann Arbor,  MI, Municipal Government, Uni of Michigan').addTo(map),
+        Abada = L.marker([42.271220, -83.739413]).bindPopup('Abada, Esteban R. (1921), 822 Oakland Ave, English, Uni of Michigan').addTo(map),
+        Asuzano = L.marker([42.270331, -83.740978]).bindPopup('Asuzano, Eustaquio A. (1921), 914 South State St. Civil Engineering, Uni of Michigan').addTo(map);
+	
     var SecDecade=L.layerGroup([Montinella, Manzanero, Ruiz, Conlu, Espiritu, Hernandez, Aguilar, Casaclang, Manzanero2, Paguyo, Villareal]);
     
+    var Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1912), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map),
+	Valenzuela = L.marker([42.349475, -83.006129]).bindPopup('Jose T. Valenzuela (1917), 992 Canton Ave, Detroit, MI, Chemical Engineering, University of Michigan').addTo(map);
+	
+    var FirDecade=L.layerGroup([Navarra, Valenzuela]);
+	
     var OverlayMaps = {
           "1910-1919" : FirDecade,
           "1920-1929" : SecDecade,
