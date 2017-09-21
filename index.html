@@ -53,6 +53,12 @@
 	ACJ= L.marker([42.478472,-83.181911]).bindPopup('American Citizens for Justice. (1998), 13361 Ludlow, Huntington Woods, MI 48070').addTo(map);
 	
     var NinDecade=L.layerGroup([Aklanon, ACJ]);
+	
+    var Aloot= L.marker([42.276640, -83.729635]).bindPopup('Aloot, Lorenzo A. (1934), 1412 Geddes, Ann Arbor, MI, University of Michigan').addTo(map),
+	Bendana=L.marker([42.281873, -83.739987]).bindPopup('Bendana, Miss Adelaide M. (1934). 119 N. Thayer, Ann Arbor, MI, University of Michigan').addTo(map),
+	Erum=L.marker([42.269645, -83.727629]).bindPopup('1030 Baldwin, Ann Arbor, MI, University of Michigan ').addTo(map);
+	
+    var ThirDecade=L.layerGroup([Aloot, Bendana, Erum]);
     
     var Montinella = L.marker([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
 	Manzanero = L.marker ([42.415848, -83.100520]).bindPopup('Manzanero, Esteban M. (1921), 80 Church St, Detroit, MI. Civil Engineering, Valparaiso University').addTo(map),
@@ -107,6 +113,7 @@
     var OverlayMaps = {
           "1910-1919" : FirDecade,
           "1920-1929" : SecDecade,
+	  "1930-1939" : ThirDecade,
 	  "1990-1999" : NinDecade,
 	  "2000-2009" : TenDecade
      };
