@@ -109,9 +109,16 @@
         Villanueva=L.marker([42.281481, -83.739290]).bindPopup('Villanueva, Eugenio S. (1928-29), 805 E. Huron, Ann Arbor, MI, University of Michigan').addTo(map);
 	
     var FirDecade=L.layerGroup([Navarro, Valenzuela, Paulilio, Racelis, Villanueva, Asuzano, Gregorio, Allas, Bibat, Bueno, Caasi, Castrense, Dumbrique, Lanting, Lopez, Manual, Matutino, Padilla, Salvosa, Sevilla, Villanueva]);
+
+    var Artiaga=L.marker([42.279852, -83.739043]).bindPopup('Artiaga, Santiago (1901), 812 E. Washington, Ann Arbor, MI, Civil Engineering, University of Michigan ').addTo(map),
+	Artiaga2=L.marker([42.278341, -83.743218]).bindPopup('Artiaga, Santiago (1902), 327 Thomson St, Ann Arbor, MI, Civil Engineering, University of Michigan ').addTo(map),
+	Artiaga3=L.marker([42.271559, -83.742737]).bindPopup('Artiaga, Santiago (1904), 512 Hill St., Ann Arbor, MI, Civil Engineering, University of Michigan').addTo(map);
+	
+    var ZerDecade=L.layerGroup([Artiaga, Artiaga2, Artiaga3]);
 	
     var OverlayMaps = {
-          "1910-1919" : FirDecade,
+          "1900-1909" : ZerDecade,
+	  "1910-1919" : FirDecade,
           "1920-1929" : SecDecade,
 	  "1930-1939" : ThirDecade,
 	  "1990-1999" : NinDecade,
