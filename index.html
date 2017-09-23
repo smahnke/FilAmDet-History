@@ -54,6 +54,24 @@
 	
     var NinDecade=L.layerGroup([Aklanon, ACJ]);
 	
+    var Axelson=L.marker([42.270195, -83.742696]).bindPopup('Fletcher Hall, Ann Arbor, MI, University of Michigan ').addTo(map),
+	Battad=L.marker([42.279581, -83.739604]).bindPopup('Battad, Jesus J. (1940-41). 213 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
+	Bovlongan=L.marker([42.280311, -83.739135]).bindPopup('Bovlongan, Deogracias (1940-41). 810 E. Washington St., Ann Arbor, MI, University of Michigan').addTo(map),
+	Castro=L.marker([42.274669, -83.735402]).bindPopup('Castro, Miss Esperanza R. & Cortes, Miss Gloria D. (1940-41). 609 E. University Ave., Ann Arbor, MI, University of Michigan').addTo(map),
+	Demandante=L.marker([42.278216, -83.731281]).bindPopup('Demandante, Miss Primitiva (1940-41). 402 Observatory St., Ann Arbor, MI, University of Michigan').addTo(map),
+	Estavillo=L.marker([42.275092, -83.729238]).bindPopup('Estavillo, Federico E. (1940-41). 1513 S. University Ave., Ann Arbor, MI, University of Michigan').addTo(map),
+	Gamet=L.marker([42.274258, -83.746806]).bindPopup('Gamet, Leon G. (1940-41). 215 E. Madison St., Ann Arbor, MI, University of Michigan').addTo(map),
+	Johnson=L.marker([42.255621, -83.597175]).bindPopup('Johnson, Miss Cecil E. (1940-41). 715 Haven Ave., Ann Arbor, MI, University of Michigan').addTo(map),
+	MacMillan=L.marker([42.276936, -83.741554]).bindPopup('MacMillan, Miss Ann R. (1940-41). 305 Helen Newberry Res., Ann Arbor, MI, University of Michigan').addTo(map),
+	Morales=L.marker([42.273925, -83.735260]).bindPopup('Morales, Alfredo J. (1940-41). 1109 Willard St., Ann Arbor, MI, University of Michigan ').addTo(map),
+	Matutino=L.marker([42.274838, -83.747391]).bindPopup('Matutino, Justo A. (1940-41). 541 S. Fourth Ave., Ann Arbor, MI, Law, University of Michigan').addTo(map),
+	Salgado=L.marker([42.276551, -83.735254]).bindPopup('Salgado, Eduardo A. & Salgado, Miss Paz P. (1940-41). 538 Church St., Ann Arbor, MI, University of Michigan').addTo(map),
+	Shearer=L.marker([42.275401, -83.742384]).bindPopup('Shearer, Alfred M. Jr. (1940-41). 209 Chicago House, Ann Arbor, MI, University of Michigan').addTo(map),
+	Toralballa=L.marker([42.279879, -83.738999]).bindPopup('Toralballa, Leopoldo V. (1940-41). 209 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
+	Zeskind=L.marker([42.272942, -83.735231]).bindPopup('Zeskind, Marvin L. (1940-41). 338 Prescott House, Ann Arbor, MI, University of Michigan').addTo(map);
+	
+    var FourDecade=L.layerGroup([Axelson, Battad, Bovlongan, Castro, Demandante, Estavillo, Gamet, Johnson, MacMillan, Morales, Matutino, Salgado, Shearer, Toralballa, Zeskind]);
+	
     var Aloot= L.marker([42.276640, -83.729635]).bindPopup('Aloot, Lorenzo A. (1934), 1412 Geddes, Ann Arbor, MI, University of Michigan').addTo(map),
 	Bendana=L.marker([42.281873, -83.739987]).bindPopup('Bendana, Miss Adelaide M. (1934). 119 N. Thayer, Ann Arbor, MI, University of Michigan').addTo(map),
 	Erum=L.marker([42.269645, -83.727629]).bindPopup('Erum, Emiliano N. (1934). 1030 Baldwin, Ann Arbor, MI, University of Michigan').addTo(map),
@@ -131,6 +149,7 @@
 	  "1910-1919" : FirDecade,
           "1920-1929" : SecDecade,
 	  "1930-1939" : ThirDecade,
+	  "1940-1949" : FourDecade,
 	  "1990-1999" : NinDecade,
 	  "2000-2009" : TenDecade
      };
