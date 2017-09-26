@@ -50,9 +50,49 @@
     var TenDecade=L.layerGroup([Paccm]);
 	
     var Aklanon= L.marker([42.577672, -82.991210]).bindPopup('Aklanon Club of Michigan. (1998), 13529 Clover Lawn, Sterling Heights, MI 48313').addTo(map),
-	Acj= L.marker([42.478472, -83.181911]).bindPopup('American Citizens for Justice. (1998), 13361 Ludlow, Huntington Woods, MI 48070').addTo(map);
-
-    var NinDecade=L.layerGroup([Aklanon, Acj]);
+	Acj= L.marker([42.478472, -83.181911]).bindPopup('American Citizens for Justice. (1998), 13361 Ludlow, Huntington Woods, MI 48070').addTo(map),
+        AngBis= L.marker([42.457956, -83.448934]).bindPopup('Ang Bisaya Incorporated of Michigan (1998). 22911 Brookforest, Novi, MI 48375').addTo(map),
+	Apag= L.marker([42.289304, -83.285815]).bindPopup('Association of Philippine American Graduates (1998). 25421 Norfolk, Dearborn Heights, MI 48125').addTo(map),
+	Bicol= L.marker([42.599680, -83.286183]).bindPopup('Bicol Association of Michigan (1998). 2731 Acorn Rd., Bloomfield Hills, MI 48302').addTo(map),
+	Bolanon= L.marker([42.383914, -83.387330]).bindPopup('Bolanon Sa Michigan (1998). 14011 Riverside, Livonia, MI 48154').addTo(map),
+	Cagayan= L.marker([42.358331, -83.519356]).bindPopup('Cagayan Valley Association (1998). 48463 Normandy Court, Plymouth, MI 48170').addTo(map),
+	Central= L.marker([42.563278, -83.079018]).bindPopup('Central Philippines University Alumni Assoc.—Michigan and Windsor Chapter (1998). 36802 Park Place Dr., Sterling Heights, MI 48310').addTo(map),
+	Circulo= L.marker([42.581196, -82.932714]).bindPopup('Circulo Pampangueno of Michigan (1998). 38542 Santa Anna, Clinton Township, MI 48036').addTo(map),
+	Downriver= L.marker([42.249842, -83.206654]).bindPopup('Downriver Filipino American Association (1998). 15530 Oceana, Allen Park, MI 48101').addTo(map),
+	FarEast= L.marker([42.514828, -83.299178]).bindPopup('Far Eastern Univ. Alumni Assoc. (1998). 30850 Cheviot Hills Dr., Franklin, MI 48025').addTo(map),
+	FilAmClubPont= L.marker([42.686823, -83.361258]).bindPopup('Filipino American Club of Pontiac (1998). 3288 Loon Lake Shores, Drayton Plains, MI 48020').addTo(map),
+	Filamco= L.marker([42.466801, -83.205048]).bindPopup('Filipino American Community Council (Filamco) (1998). 15918 Mt. Vernon, Southfield MI 48075').addTo(map),
+	Fasa= L.marker([42.278026, -83.742364]).bindPopup('Filipino American Student Assoc. (1998). 555 E. William, Ann Arbor, MI 48103').addTo(map),
+	FilStuSoc= L.marker([42.357727, -83.070680]).bindPopup('Filipino Student Society (1998). Wayne State University, 351 Student Center Bldg., Detroit, MI 48202').addTo(map),
+	FilWomen= L.marker([42.613608, -83.242982]).bindPopup('Filipino Women’s Club of Metropolitan Detroit (1998). 1933 Hunters Ridge, Bloomfield Hills, MI 48013').addTo(map),
+	GreatLans= L.marker([42.734958, -84.563011]).bindPopup('Greater Lansing Filipino-American Club (1998). 732 W. Ottawa St., Lansing, MI 48915').addTo(map),
+	Ilocano= L.marker([42.591734, -83.253775]).bindPopup('Ilocano Asso. Of Michigan (1998). 60 Balfour, Bloomfield Hills, MI 48304').addTo(map),
+	Kabataan= L.marker([42.462438, -82.937607]).bindPopup('Kabataan Sanahang Philipino NG Michigan (1998). 22165 Normandy, Eastpointe, MI 48021').addTo(map),
+	Kahirup= L.marker([42.563440, -83.079809]).bindPopup('Kahirup Club of Michigan Inc. (1998). 36802 Park Place Dr., Sterling Heights, MI 48310').addTo(map),
+	KiwClubMetDet= L.marker([42.564179, -83.066114]).bindPopup('Kiwanas Club of Metropolitan North (1998). 4249 Coplin Dr., Sterling Hts., MI 48310').addTo(map),
+	KiwClubCosDet= L.marker([42.536561, -83.391327]).bindPopup('Kiwanis Club of Cosmopolitan Detroit (1998). 6886 E. Nashway Dr., West Bloomfield, MI 48232').addTo(map),
+	KiwClubDet= L.marker([42.336922, -83.024480]).bindPopup('Kiwanis Club of Detroit (1998). 2170 E. Jefferson, Detroit, MI 48017').addTo(map),
+	Lipunang= L.marker([42.108772, -83.148835]).bindPopup('Lipunang Tagalog (1998). 27285 E. River Road, Grosse Ile, MI 48138').addTo(map),
+	MoveFreePhil= L.marker([42.478480, -83.181922]).bindPopup('Movement For a Free Phillipines (1998). 13361 Ludlow, Huntington Woods, MI 48070').addTo(map),
+	Novo= L.marker([42.412370, -83.460269]).bindPopup('Novo Eciiano of Michigan (1998). 17413 Pon Valley Drive, Northville, MI 48169').addTo(map),
+	Pangasinan= L.marker([42.492017, -83.253418]).bindPopup('Pangasinan Club of Michigan (1998). 21160 Dartmouth, Southfield, MI 48076').addTo(map),
+	Pasadena= L.marker([42.336946, -83.024480]).bindPopup('Pasadena Club of Michigan (1998). 2170 E. Jefferson, Detroit, MI').addTo(map),
+	PhilAmLions= L.marker([42.651967, -83.137967]).bindPopup('Phil-Am Lions Club of Metro Detroit (1998). 244 Prospect Drive, Rochester Hills, MI 48307').addTo(map),
+	PhilAmSen= L.marker([42.356828, -83.335808]]).bindPopup('Phil-Am Senior Citizens of Mich. (1998). 9018 Beatrice St., Livonia, MI 48150').addTo(map),
+	PhilAmAssocInc= L.marker([42.345740, -83.075970]).bindPopup('Philippine American Assoc., Inc. (1998). 4120 Commonwealth, Detroit, MI 48208').addTo(map),
+	PhilAmFamAssoc= L.marker([42.334707, -83.469441]).bindPopup('Philippine American Family Association (1998). 7000 Woonsocket, Canton, MI 48187').addTo(map),
+	PhilAmSenMetDet= L.marker([42.433793, -82.880855]).bindPopup('Philippine American Senior Citizens of Metro Detroit (1998). 50 Belle Mead, Grosse Pointe Shores, MI').addTo(map),
+	PhilAmStudSoc= L.marker([42.728476, -84.478376]).bindPopup('Philippine American Student Soc. (1998). Michigan State University, 209 Bessey Hall, East Lansing, MI 48825').addTo(map),
+	PhilAssocNMI= L.marker([43.476853, -84.086007]).bindPopup('Philippine Association of Northeastern Michigan (1998). 8741 White Beech Dr., Saginaw, MI 48603').addTo(map),
+	PhilHistSoc= L.marker([42.799574, -83.712096]).bindPopup('Philippine Historical Society (1998). 612 Hickory St., Fenton, MI 48030').addTo(map),
+	PhilMichClub= L.marker([42.268049, -83.760424]).bindPopup('Philippine Michigan Club (1998). University of Michigan, 1101 Vandusen, Ann Arbor, MI 48103').addTo(map),
+	Saluyot= L.marker([42.435122, -83.218039]).bindPopup('Saluyot Club of Michigan (1998). 19494 Femore, Detroit, MI 48235').addTo(map),
+	SamahangFilOak= L.marker([42.649209, -83.437893]).bindPopup('Samahang Filipino NG Oakland (1998). 7658 Vamoco, Waterford, MI 48327').addTo(map),
+	SamahangTaga= L.marker([42.433499, -82.882550]).bindPopup('Samahang Taga Bataan (1998). 69 Belle Mead, Grosse Pointe Shores, MI 48236').addTo(map),
+	UofSanto= L.marker([42.598541, -83.261803]).bindPopup('University of Santo Tomas-Medical Alumni of Michigan (1998). 2828 Colonial Trail, Bloomfield Hills, MI 480302').addTo(map),
+	Waray= L.marker([42.553827, -83.128636]).bindPopup('Waray Waray International Org. (1998). 1093 Larchwood, Troy, MI 48083').addTo(map);
+	
+    var NinDecade=L.layerGroup([Aklanon, Acj, AngBis, Apag, Bicol, Bolanon, Cagayan, Central, Circulo, Downriver, FarEast, FilAmClubPont, Filamco, Fasa, FilStuSoc, FilWomen, GreatLans, Ilocano, Kabataan, Kahirup, KiwClubMetDet, KiwClubCosDet, KiwClubDet, Lipunang, MoveFreePhil, Novo, Pangasinan, Pasadena, PhilAmLions, PhilAmSen, PhilAmAssocInc, PhilAmFamAssoc, PhilAmSenMetDet, PhilAmStudSoc, PhilAssocNMI, PhilHistSoc, PhilMichClub, Saluyot, SamahangFilOak, SamahangTaga, UofSanto, Waray]);
 	
     var Axelson=L.marker([42.270195, -83.742696]).bindPopup('Axelson, Rudolph A. (1940-41). Fletcher Hall, Ann Arbor, MI, University of Michigan').addTo(map),
 	Battad=L.marker([42.279581, -83.739604]).bindPopup('Battad, Jesus J. (1940-41). 213 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
