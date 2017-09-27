@@ -75,6 +75,12 @@
 
     var NinDecade=L.layerGroup([Aklanon, Acj, AngBis, Apag, Bicol, Bolanon, Cagayan, Central, Circulo, Downriver, FarEast, FilAmClubPont, Filamco, Fasa, FilStuSoc, FilWomen, GreatLans, Ilocano, Kabataan, Kahirup, KiwClubMetDet, KiwClubCosDet, KiwClubDet]);	
 	
+    var FilAmComCouncil=L.marker([42.474065, -83.206489]).bindPopup('Filipino American Community Council (1983). 15928 W. Ten Mile Rd., Southfield, MI 48075 ').addTo(map),
+	FilAmSWMI=L.marker([42.309114, -85.674818]).bindPopup('Filipino-American Southwestern Michigan (1983). 2285 Signal Hill, Kalamazoo, MI 49009').addTo(map),
+	FilWomClubMetDet=L.marker([42.613331, -83.165944]).bindPopup('Filipino Women’s Club of Metro Detroit (1983). 822 Keaton, Troy, MI 48098').addTo(map);
+
+    var EighDecade=L.layerGroup([FilAmComCouncil, FilAmSWMI, FilWomClubMetDet]);
+	
     var Axelson=L.marker([42.270195, -83.742696]).bindPopup('Axelson, Rudolph A. (1940-41). Fletcher Hall, Ann Arbor, MI, University of Michigan').addTo(map),
 	Battad=L.marker([42.279581, -83.739604]).bindPopup('Battad, Jesus J. (1940-41). 213 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
 	Bovlongan=L.marker([42.280311, -83.739135]).bindPopup('Bovlongan, Deogracias (1940-41). 810 E. Washington St., Ann Arbor, MI, University of Michigan').addTo(map),
@@ -171,6 +177,7 @@
           "1920-1929" : SecDecade,
 	  "1930-1939" : ThirDecade,
 	  "1940-1949" : FourDecade,
+	  "1980-1989" : EighDecade,
 	  "1990-1999" : NinDecade,
 	  "2000-2009" : TenDecade
      };
