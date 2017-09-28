@@ -217,9 +217,12 @@
 
     var Artiaga=L.marker([42.279852, -83.739043]).bindPopup('Artiaga, Santiago (1901), 812 E. Washington, Ann Arbor, MI, Civil Engineering, University of Michigan ').addTo(map),
 	Artiaga2=L.marker([42.278341, -83.743218]).bindPopup('Artiaga, Santiago (1902), 327 Thomson St, Ann Arbor, MI, Civil Engineering, University of Michigan ').addTo(map),
-	Artiaga3=L.marker([42.271559, -83.742737]).bindPopup('Artiaga, Santiago (1904), 512 Hill St., Ann Arbor, MI, Civil Engineering, University of Michigan').addTo(map);
+	Artiaga3=L.marker([42.271559, -83.742737]).bindPopup('Artiaga, Santiago (1904), 512 Hill St., Ann Arbor, MI, Civil Engineering, University of Michigan').addTo(map),
+	Tecson=L.marker([42.281424, -83.740173]).bindPopup('Tecson, Juan (1901). 713 E. Huron St., Ann Arbor, MI, Civil Engineering, University of Michigan').addTo(map),
+	Tecson2=L.marker([42.276130, -83.734639]).bindPopup('Tecson, Juan (1902). 520 Church St., Ann Arbor, MI, Civil Engineering, University of Michigan').addTo(map),
+	Tecson3=L.marker([42.278025, -83.756249]).bindPopup('Tecson, Juan (1904). 326 Fifth Ave., Ann Arbor, MI, Civil Engineering, University of Michigan').addTo(map);
 	
-    var ZerDecade=L.layerGroup([Artiaga, Artiaga2, Artiaga3]);
+    var ZerDecade=L.layerGroup([Artiaga, Artiaga2, Artiaga3, Tecson, Tecson2, Tecson3]);
 	
     var OverlayMaps = {
           "1900-1909" : ZerDecade,
