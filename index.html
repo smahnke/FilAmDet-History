@@ -147,6 +147,10 @@
 	Toralballa=L.marker([42.279879, -83.738999]).bindPopup('Toralballa, Leopoldo V. (1940-41). 209 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
 	Zeskind=L.marker([42.272942, -83.735231]).bindPopup('Zeskind, Marvin L. (1940-41). 338 Prescott House, Ann Arbor, MI, University of Michigan').addTo(map);
 	
+    var FilClubHouse=L.marker([42.396319, -83.026666]).bindPopup('Filipino Club House (1961). 9115 St. Cyril St., Detroit, MI').addTo(map);
+	
+    var SixDecade=L.layerGroup([FilClubHouse]);
+	
     var FourDecade=L.layerGroup([Axelson, Battad, Bovlongan, Castro, Demandante, Estavillo, Gamet, Johnson, MacMillan, Morales, Matutino, Salgado, Shearer, Toralballa, Zeskind]);
 	
     var Aloot= L.marker([42.276640, -83.729635]).bindPopup('Aloot, Lorenzo A. (1934), 1412 Geddes, Ann Arbor, MI, University of Michigan').addTo(map),
@@ -230,6 +234,7 @@
           "1920-1929" : SecDecade,
 	  "1930-1939" : ThirDecade,
 	  "1940-1949" : FourDecade,
+	  "1960-1969" : SixDecade,
 	  "1970-1979" : SevDecade,
 	  "1980-1989" : EighDecade,
 	  "1990-1999" : NinDecade,
