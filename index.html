@@ -95,7 +95,12 @@
 		
     var NinDecade=L.layerGroup([Aklanon, Acj, AngBis, Apag, Bicol, Bolanon, Cagayan, Central, Circulo, Downriver, FarEast, FilAmClubPont, Filamco, Fasa, FilStuSoc, FilWomen, GreatLans, Ilocano, Kabataan, Kahirup, KiwClubMetDet, KiwClubCosDet, KiwClubDet, Lipunang, MoveFreePhil, Novo, Pangasinan, Pasadena, PhilAmLions, PhilAmSen, PhilAmAssocInc, PhilAmFamAssoc, PhilAmSenMetDet, PhilAmStudSoc, PhilAssocNMI, PhilHistSoc, PhilMichClub, Saluyot, SamahangFilOak, SamahangTaga, UofSanto, Waray]);	
 	
-    var FilAmComCouncil=L.marker([42.474065, -83.206489]).bindPopup('Filipino American Community Council (1983). 15928 W. Ten Mile Rd., Southfield, MI 48075 ').addTo(map),
+    var Bicol=L.marker([42.574361, -83.079638]).bindPopup('Bicol Association of Michigan (1983). 2953 Sylvan, Sterling Heights, MI 48077').addTo(map),
+	FedoFilCluboMI=L.marker([42.279466, -83.282288]).bindPopup('Federation of Filipino Clubs of Michigan (1983). 25101 Colgate, Dearborn, MI 48125').addTo(map),
+	FilAmCathClub=L.marker([42.666489, -83.299472]).bindPopup('Filipino American Catholic Club (1983). 16 E. Rutgers, Pontiac, MI 48085').addTo(map),
+	FilAmAssoc1=L.marker([42.462383, -82.937617]).bindPopup('Filipino-American Association (1983). 22165 Normandy, East Detroit, MI 48021').addTo(map),
+	FilPontiac=L.marker([42.666227, -83.299476]).bindPopup('Filipino American Club of Pontiac (1983). 18 E. Rutgers, Pontiac, MI 48055').addTo(map),
+        FilAmComCouncil=L.marker([42.474065, -83.206489]).bindPopup('Filipino American Community Council (1983). 15928 W. Ten Mile Rd., Southfield, MI 48075 ').addTo(map),
 	FilAmSWMI=L.marker([42.309114, -85.674818]).bindPopup('Filipino-American Southwestern Michigan (1983). 2285 Signal Hill, Kalamazoo, MI 49009').addTo(map),
 	FilWomClubMetDet=L.marker([42.613331, -83.165944]).bindPopup('Filipino Women’s Club of Metro Detroit (1983). 822 Keaton, Troy, MI 48098').addTo(map),
 	KabaSamaPhil=L.marker([42.462422, -82.937607]).bindPopup('Kabataan Samahang Philipino Ng Michigan (1983). 22165 Normandy, E. Detroit, MI 48021').addTo(map),
@@ -113,7 +118,7 @@
 	Silliman=L.marker([42.754437, -84.467457]).bindPopup('Silliman Alumni Association (1983). 1820 Foxcroft, East Lansing, MI 48823').addTo(map),
 	UofPhilAlum=L.marker([42.445775, -82.880870]).bindPopup('University of the Philippines Alumni Association of Michigan (1983). 575 Canterbury, Grosse Pte, Woods, MI 48236').addTo(map);
 
-    var EighDecade=L.layerGroup([FilAmComCouncil, FilAmSWMI, FilWomClubMetDet, KabaSamaPhil, KiwClubCosDet2, KiwClubMetDet2, KiwClubWayne, PangasinanClubMI, PhilAmClub, PACCM2, PhilAmLans, PhilAssocFlint, PhilMichClub2, PhilTechSocMI, SamahangPhilNGOak, Silliman, UofPhilAlum]);
+    var EighDecade=L.layerGroup([Bicol, FedoFilCluboMI, FilAmCathClub, FilAmAssoc1, FilPontiac, FilAmComCouncil, FilAmSWMI, FilWomClubMetDet, KabaSamaPhil, KiwClubCosDet2, KiwClubMetDet2, KiwClubWayne, PangasinanClubMI, PhilAmClub, PACCM2, PhilAmLans, PhilAssocFlint, PhilMichClub2, PhilTechSocMI, SamahangPhilNGOak, Silliman, UofPhilAlum]);
 	
     var CirculoPamp=L.marker([42.573358, -83.277747]).bindPopup('Circulo Pampangueno of Michigan (1973). 4519 Ranch Land, Bloomfield Hills, MI 48013').addTo(map),
 	FarEastUAlum=L.marker([42.532256, -83.263224]).bindPopup('Far Eastern University Alumni Association (1973). 7383 Lahser Rd, Birmingham, MI').addTo(map),
@@ -132,6 +137,10 @@
 
     var SevDecade=L.layerGroup([CirculoPamp, FarEastUAlum, FilStudSoc2, FilWomClubMetDet2, GreatLansFilAm, IlocanoAssoc, KabataanSanaPhil, KiwClubCosDet3, KiwClubWayne2, KiwClubWest, MoveFreePhil2, Novo2, Pangasinan2, PhilAmLions2]);
 	
+    var FilClubHouse=L.marker([42.396319, -83.026666]).bindPopup('Filipino Club House (1961). 9115 St. Cyril St., Detroit, MI').addTo(map);
+	
+    var SixDecade=L.layerGroup([FilClubHouse]);
+	
     var Axelson=L.marker([42.270195, -83.742696]).bindPopup('Axelson, Rudolph A. (1940-41). Fletcher Hall, Ann Arbor, MI, University of Michigan').addTo(map),
 	Battad=L.marker([42.279581, -83.739604]).bindPopup('Battad, Jesus J. (1940-41). 213 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
 	Bovlongan=L.marker([42.280311, -83.739135]).bindPopup('Bovlongan, Deogracias (1940-41). 810 E. Washington St., Ann Arbor, MI, University of Michigan').addTo(map),
@@ -147,10 +156,6 @@
 	Shearer=L.marker([42.275401, -83.742384]).bindPopup('Shearer, Alfred M. Jr. (1940-41). 209 Chicago House, Ann Arbor, MI, University of Michigan').addTo(map),
 	Toralballa=L.marker([42.279879, -83.738999]).bindPopup('Toralballa, Leopoldo V. (1940-41). 209 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
 	Zeskind=L.marker([42.272942, -83.735231]).bindPopup('Zeskind, Marvin L. (1940-41). 338 Prescott House, Ann Arbor, MI, University of Michigan').addTo(map);
-	
-    var FilClubHouse=L.marker([42.396319, -83.026666]).bindPopup('Filipino Club House (1961). 9115 St. Cyril St., Detroit, MI').addTo(map);
-	
-    var SixDecade=L.layerGroup([FilClubHouse]);
 	
     var FourDecade=L.layerGroup([Axelson, Battad, Bovlongan, Castro, Demandante, Estavillo, Gamet, Johnson, MacMillan, Morales, Matutino, Salgado, Shearer, Toralballa, Zeskind]);
 	
