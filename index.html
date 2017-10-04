@@ -141,6 +141,10 @@
 	
     var SixDecade=L.layerGroup([FilClubHouse]);
 	
+    var FedoPhilClubMI2=L.marker([42.373926, -82.983733]).bindPopup('Federation of Philippino Clubs of Michigan (1951). 3410 Harding, Detroit, MI, 48214').addTo(map); 
+	
+    var FifDecade=L.layerGroup([FedoPhilClubMI2]);
+	
     var Axelson=L.marker([42.270195, -83.742696]).bindPopup('Axelson, Rudolph A. (1940-41). Fletcher Hall, Ann Arbor, MI, University of Michigan').addTo(map),
 	Battad=L.marker([42.279581, -83.739604]).bindPopup('Battad, Jesus J. (1940-41). 213 S. Thayer St., Ann Arbor, MI, University of Michigan').addTo(map),
 	Bovlongan=L.marker([42.280311, -83.739135]).bindPopup('Bovlongan, Deogracias (1940-41). 810 E. Washington St., Ann Arbor, MI, University of Michigan').addTo(map),
@@ -240,6 +244,7 @@
           "1920-1929" : SecDecade,
 	  "1930-1939" : ThirDecade,
 	  "1940-1949" : FourDecade,
+	  "1950-1959" : FifDecade,
 	  "1960-1969" : SixDecade,
 	  "1970-1979" : SevDecade,
 	  "1980-1989" : EighDecade,
