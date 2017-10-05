@@ -18,7 +18,7 @@
 	#map {height: 100%;}
     </style>
 	  <header>
-		  <h3> The Michigan Filipinx Mapping Project</h3> <p>In collaboration with</p> <img src='https://github.com/smahnke/FilAmDet-History/blob/master/images/FANHS-MI.jpg'/>
+		  <h3> The Michigan Filipinx Mapping Project</h3> <p>In collaboration with <img src='FANHS-MI.jpg'>
 		  <p> The following map serves as an archive of locations of Michigan's early Filipinx students, residents, and registered organizations. Data has been collected from government and university student directories, newsletters, ethnic directories, and Filipinx locals.</p>
 	  </header>
   </head>
@@ -46,7 +46,7 @@
     	accessToken: 'your.mapbox.access.token'
     }).addTo(map);
 
-    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('<a href="FilAmDet-History/images/PACCM icon.png"></a>Philippine American Cultural Center of Michigan (PACCM). 17356 Northland Park Ct, Southfield, MI 48075<audio controls><source src="./audiojs/Sonrecording.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>').addTo(map);
+    var Paccm = L.marker([42.445686, -83.215482]).bindPopup('Philippine American Cultural Center of Michigan (PACCM). 17356 Northland Park Ct, Southfield, MI 48075<audio controls><source src="./audiojs/Sonrecording.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>').addTo(map);
     
     var TenDecade=L.layerGroup([Paccm]);
 	
